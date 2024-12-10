@@ -44,6 +44,7 @@
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
             groupBox3 = new GroupBox();
+            btnClear = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -212,12 +213,24 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "คำนวณพื้นที่รูปหกเหลี่ยมด้านเท่า";
             // 
+            // btnClear
+            // 
+            btnClear.BackColor = Color.FromArgb(0, 192, 0);
+            btnClear.Location = new Point(712, 260);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(279, 331);
+            btnClear.TabIndex = 16;
+            btnClear.Text = "ล้างต้า";
+            btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1044, 639);
+            Controls.Add(btnClear);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
@@ -257,5 +270,6 @@
         private GroupBox groupBox1;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
+        private Button btnClear;
     }
 }
